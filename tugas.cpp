@@ -216,7 +216,22 @@ do {
             catch (string pesan) {
                 cout << pesan << endl;
             }
+            
 
+            break;
+
+        case 0:
+            cout << "Program selesai.\n";
+            break;
+
+        default:
+            cout << "Pilihan tidak tersedia!\n";
+        }
+
+    } while (pilihan != 0);
+
+    return 0;
+}
       
     
 
