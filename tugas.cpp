@@ -52,3 +52,19 @@ void tampilkanBarang() {
 
     file.close();
 }
+
+void tambahBarang() {
+    ofstream file("gudang.txt", ios::app);
+
+    string barang;
+    cin.ignore();
+
+    cout << "Masukkan nama barang : ";
+    getline(cin, barang);
+
+    file << barang << endl;
+
+    file.close();
+
+    cout << "Barang berhasil ditambahkan!\n";
+}
