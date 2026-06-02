@@ -159,5 +159,23 @@ int main() {
     TokoElektronik toko;
 
     int pilihan;
+    
+do {
+        cout << "\n====================================";
+        cout << "\n TOKO ELEKTRONIK GIBRAN JAYA";
+        cout << "\n====================================\n";
 
+        tampilkanBarang();
+
+        cout << "\n============== MENU ==============\n";
+        cout << "1. Tambah Barang (Create)\n";
+        cout << "2. Lihat Barang (Read)\n";
+        cout << "3. Update Barang\n";
+        cout << "4. Hapus Barang (Delete)\n";
+        cout << "5. Simulasi Etalase\n";
+        cout << "0. Keluar\n";
+        cout << "Pilihan : ";
+        cin >> pilihan;
+
+    
 
