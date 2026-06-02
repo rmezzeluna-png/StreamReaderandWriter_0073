@@ -142,5 +142,17 @@ void hapusBarang() {
         return;
     }
 
+    data.erase(data.begin() + nomor - 1);
+
+    ofstream out("gudang.txt");
+
+    for (string item : data) {
+        out << item << endl;
+    }
+
+    out.close();
+
+    cout << "Data berhasil dihapus!\n";
+}
 
 
