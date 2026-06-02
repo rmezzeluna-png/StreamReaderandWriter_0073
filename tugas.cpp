@@ -207,6 +207,15 @@ do {
             catch (string pesan) {
                 cout << pesan << endl;
             }
+            // Skenario 2
+            try {
+                cout << "Rak 5 : "
+                     << toko.ambilProduk(5)
+                     << endl;
+            }
+            catch (string pesan) {
+                cout << pesan << endl;
+            }
 
       
     
