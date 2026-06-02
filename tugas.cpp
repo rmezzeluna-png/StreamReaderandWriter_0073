@@ -159,7 +159,7 @@ int main() {
     TokoElektronik toko;
 
     int pilihan;
-    
+
 do {
         cout << "\n====================================";
         cout << "\n TOKO ELEKTRONIK GIBRAN JAYA";
@@ -176,6 +176,28 @@ do {
         cout << "0. Keluar\n";
         cout << "Pilihan : ";
         cin >> pilihan;
+        
+  switch (pilihan) {
 
+        case 1:
+            tambahBarang();
+            break;
+
+        case 2:
+            tampilkanBarang();
+            break;
+
+        case 3:
+            updateBarang();
+            break;
+
+        case 4:
+            hapusBarang();
+            break;
+
+        case 5:
+            cout << "\n===== SIMULASI ETALASE =====\n";
+
+      
     
 
