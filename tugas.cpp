@@ -113,3 +113,15 @@ void updateBarang() {
     cout << "Data berhasil diperbarui!\n";
 }
 
+
+void hapusBarang() {
+    ifstream file("gudang.txt");
+
+    vector<string> data;
+    string barang;
+
+    while (getline(file, barang)) {
+        data.push_back(barang);
+    }
+
+
