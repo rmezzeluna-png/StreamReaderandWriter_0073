@@ -124,4 +124,11 @@ void hapusBarang() {
         data.push_back(barang);
     }
 
+    file.close();
+
+    if (data.empty()) {
+        cout << "Data kosong.\n";
+        return;
+    }
+
 
