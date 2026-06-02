@@ -33,3 +33,22 @@ public:
     }
 };
 
+
+void tampilkanBarang() {
+    ifstream file("gudang.txt");
+    string barang;
+
+    cout << "\n===== DAFTAR BARANG DI GUDANG =====\n";
+
+    if (!file) {
+        cout << "Belum ada data barang.\n";
+        return;
+    }
+
+    int no = 1;
+    while (getline(file, barang)) {
+        cout << no++ << ". " << barang << endl;
+    }
+
+    file.close();
+}
