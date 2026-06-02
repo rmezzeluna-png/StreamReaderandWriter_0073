@@ -176,7 +176,7 @@ do {
         cout << "0. Keluar\n";
         cout << "Pilihan : ";
         cin >> pilihan;
-        
+
   switch (pilihan) {
 
         case 1:
@@ -197,6 +197,16 @@ do {
 
         case 5:
             cout << "\n===== SIMULASI ETALASE =====\n";
+
+            // Skenario 1
+            try {
+                cout << "Rak 1 : "
+                     << toko.ambilProduk(1)
+                     << endl;
+            }
+            catch (string pesan) {
+                cout << pesan << endl;
+            }
 
       
     
