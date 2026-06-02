@@ -5,3 +5,8 @@
 #include <string>
 
 using namespace std;
+
+
+class TokoElektronik {
+private:
+    array<string, 3> etalase;
