@@ -154,5 +154,10 @@ void hapusBarang() {
 
     cout << "Data berhasil dihapus!\n";
 }
+int main() {
+
+    TokoElektronik toko;
+
+    int pilihan;
 
 
