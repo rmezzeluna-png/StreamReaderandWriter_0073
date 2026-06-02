@@ -131,4 +131,16 @@ void hapusBarang() {
         return;
     }
 
+    tampilkanBarang();
+
+    int nomor;
+    cout << "Pilih nomor barang yang ingin dihapus : ";
+    cin >> nomor;
+
+    if (nomor < 1 || nomor > data.size()) {
+        cout << "Nomor tidak valid!\n";
+        return;
+    }
+
+
 
