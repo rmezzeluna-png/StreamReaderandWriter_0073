@@ -68,3 +68,48 @@ void tambahBarang() {
 
     cout << "Barang berhasil ditambahkan!\n";
 }
+
+void updateBarang() {
+    ifstream file("gudang.txt");
+
+    vector<string> data;
+    string barang;
+
+    while (getline(file, barang)) {
+        data.push_back(barang);
+    }
+
+    file.close();
+
+    if (data.empty()) {
+        cout << "Data kosong.\n";
+        return;
+    }
+
+    tampilkanBarang();
+
+    int nomor;
+    cout << "Pilih nomor barang yang ingin diubah : ";
+    cin >> nomor;
+
+    if (nomor < 1 || nomor > data.size()) {
+        cout << "Nomor tidak valid!\n";
+        return;
+    }
+
+    cin.ignore();
+
+    cout << "Masukkan nama barang baru : ";
+    getline(cin, data[nomor - 1]);
+
+    ofstream out("gudang.txt");
+
+    for (string item : data) {
+        out << item << endl;
+    }
+
+    out.close();
+
+    cout << "Data berhasil diperbarui!\n";
+}
+
